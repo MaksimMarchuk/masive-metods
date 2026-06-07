@@ -1,22 +1,59 @@
-var print = "Hello World";
+var list = ["Adolf", 88, "Haiel", "Gebels", 1161, "Reich"];
 
-console.log(print.split(" "));
+//1
+list.push("Rotsernberg");
+console.log(list);
 
-var fruits = ["apple", "orange", "lemon"]
+//2
+list.pop();
+console.log(list);
 
-console.log(fruits.join(" - "))
+//3
+list.unshift("Gimler");
+console.log(list);
 
-var fruit = "Gitler"
+//4
+list.shift();
+console.log(list);
 
-console.log(fruits.includes(fruit));
-fruits.push("88")
+//5
+var list2 = ["Göring", "Rudolf", "Bormann"];
 
-console.log(fruits)
+var lists = list.concat(list2);
 
-fruits.pop()
+console.log(lists);
 
-console.log(fruits)
+//6
+console.log(list.join(" - "))
 
-fruits.unshift("Adolf")
+//7
+var num = [88 , 1488, 1161, 44, 123]
 
-console.log(fruits)
+num.sort((a,b) => a - b);
+console.log(num);
+
+//8
+num.sort((a,b) => b - a);
+console.log(num);
+
+//9
+num.reverse();
+console.log(num);
+
+//10
+console.log(list.indexOf("Gebels"));
+
+//11
+console.log(list.includes("Heinrich"));
+
+//12
+console.log(list.slice(2, 4));
+
+//13
+console.log(list.splice(1, 3));
+
+//14
+list.splice(1, 1, "Hess");
+console.log(list);
+
+//15
